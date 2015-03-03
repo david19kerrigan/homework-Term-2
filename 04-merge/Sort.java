@@ -24,6 +24,7 @@ public class Sort{
 		}
 		return a;
 	}
+/*
 	public static void main(String[] args){
 		Sort a = new Sort();	
 		ArrayList<Integer> a0 = new ArrayList<Integer>();
@@ -31,7 +32,7 @@ public class Sort{
 		a0.add(2);
 		ArrayList<Integer> a1 = new ArrayList<Integer>(); 	
 		System.out.println(a.merge(
-/*	
+
 	public ArrayList<integer> s(ArrayList<integer> A){
 		if(A.size==0){
 			return A;
