@@ -17,10 +17,10 @@ public Stomp{
 		}
 			
 		return int[] {a,b}; 
-
+ 
 	public int findHill(){
 		int[] c = findMax();
-		if(c[0] == 0){
+		if(pasture.squaresAround())
 			
 			
 		
