@@ -1,6 +1,20 @@
 import java.util.*;
 public class Sort{
- 	
+ 	private ArrayList<integer> l = new ArrayList<integer>();
+ 	private int start = 0;
+ 	public void s(ArrayList<Integer> b, boolean down){
+ 		
+ 		if(b.size()>1){
+ 			l.add(s(b.sublist(0,b.size()/2)));
+ 			s((b.sublist(b.size()/2,b.size())));
+
+ 		}
+
+ 		else{
+ 			merge(start,start+1)
+ 			start++;
+ 		}
+ 	}
 	public ArrayList<Integer> merge(ArrayList<Integer> A, ArrayList<Integer> B){
 		ArrayList<Integer> a = new ArrayList<Integer>();
 		while(A.size() > 0 && B.size() > 0){
