@@ -15,13 +15,14 @@ public class LList {
 			aNode.setNext(newNode);
 				
 			}
-		public void add(String s){
+		public void add(int s){
 				Node tmp = new Node(s);
 				tmp.setNext(l);
 				length++;
 				l = tmp;
 		}
-		public String find(String s){
+		public String get(int s){
+			long s = System.out.currentTimeMillis();
 			private Node aNode = l;
 			while(aNode != null){
 				aNode = aNode.getNext();
@@ -29,15 +30,18 @@ public class LList {
 			if(aNode.getData() == s){
 				return aNode.getData();
 			}
+			System.out.println(System.out.currentTimeMillis()-s)
 		}
-		public void remove(index n){
+		public boolean remove(value n){
 			private Node aNode = l;
 			for(int i = 0; i < x; i++){
 				aNode = aNode.getNext();
-				if(i == x-1){
+				if(i == aNode){
 					newNode.setNext(aNode.getNext());
+					aNode.setNext(null);
+					return true;
 				}
-			aNode.setNext(null);
+			return false;
 		}
 
 		public String toString(){
