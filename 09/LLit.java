@@ -17,7 +17,16 @@ public class LLit<E> implements Iterator<E>{
 				return retval;
 		}
 
-		public void remove() {
-				// fill this in later
+		public void remove(int index) {
+				private Node tmp = t;
+				for(int i = 0; i < index; i++){
+					tmp=tmp.getNext();
+					if(i==index-2){
+						private node a = tmp;
+					}
+				a.setNext(tmp.getNext());
+				tmp.setNext(null);
+				}
+
 		}
 }
