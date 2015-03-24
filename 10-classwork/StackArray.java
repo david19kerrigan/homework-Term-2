@@ -20,14 +20,14 @@ public class stackArray<E>{
 
 	public E pop(){
         // remove and return the top item from the stack
-		tmp = array[0];	
+		Object tmp = array[0];	
 		Object[] newArray = new Object[array.length-1];
 		int j = 0;
 		for(int i = 1; i < array.length; i++){
 			newArray[j] = array[i];
 		}
 		array = newArray;
-		return tmp;	
+		return (E)tmp;	
 	}
 
 	public boolean empty(){
@@ -36,7 +36,7 @@ public class stackArray<E>{
 
         public E top() {
         // return the top item from the stack
-		return array[0];
+		return (E)array[0];
         }
 }
 
