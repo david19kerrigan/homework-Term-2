@@ -6,7 +6,7 @@ public class Driver{
 		Node<E> n = new Node<E>(1);
 		a.push(n);
 		System.out.println(a.top());		
-		System.out.println(a.pop());
-		System.out.println(a.empty());
+		System.out.println(a.front());
+		System.out.println(a.size());
 
 }
