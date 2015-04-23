@@ -3,10 +3,15 @@ public class Node{
     private int x,y;
     private Node next;
     private int priority;
+    private int distanceTo;
 		
-    public Node(int x, int y, int a, int b){
+    public Node(int x, int y, int a, int b, int px, int py){
 	this.x = x;
 	this.y = y;
+    int[] p = new int[2];
+    p[0] =px;
+    p[1] = py;
+
 	int[] z = new int [2];
 	a[0] = x;
 	a[1] = y;
@@ -26,8 +31,8 @@ public class Node{
         }
         return Math.sqrt(Sum);
     }
-    public int getDistance(){
-	return priority;
+    public int getPriority(){
+	return distanceTo+priority;
     }
     public Node getNext() {
 	return next;
