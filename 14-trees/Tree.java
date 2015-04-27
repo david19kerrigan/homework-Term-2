@@ -1,8 +1,11 @@
 public class Tree{
 	private Node root;
+	private String t;
 	public Tree(Node r){
 		root = r;
+		
 	}
+/*
 	public void insert(Node n){
 		Node tmp = root;
 		myData = n.getData();
@@ -23,6 +26,24 @@ public class Tree{
 
 	}
 			
-}
+
 	
+*/
+
+	public String toString(){
+		Node tmp = root;
+		boolean d = false;			
+		String retString = "";		
+		while(!d){
+			if(tmp==null)
+	public String tL(Node t){
+		if(t==null) return;
+		if(!t.getLeft && !t.getRight) return;
+		else{
+			t+=t.getRight;
+			t+=t.getLeft;
+			
+			
+	
+		
 	
