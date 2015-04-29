@@ -28,7 +28,7 @@ public class Tree{
 			
 
 	
-*/
+
 
 	public String toString(){
 		Node tmp = root;
@@ -42,7 +42,29 @@ public class Tree{
 		else{
 			t+=t.getRight;
 			t+=t.getLeft;
+*/
+
+	public void remove(int d){
+		Node tmp = root;
+		
+		while(tmp.getLeft().getData()!=d || tmp.getright().getData()!=d){
+			if(d>tmp.getData()) tmp = tmp.getRight();
+			if(d<tmp.getData()) tmp = tmp.getLeft();
+		}
+		if(d>tmp.getData()) Node n = tmp.getRight();
+		if(d<tmp.getData()) Node n = tmp.getLeft();
+		if(!tmp.getLeft() && !tmp.getRight()){
+			tmp.setNext(null);
+		}
+		if((!n.getLeft() && n.getRight) || (!n.getRight() && n.getLeft)){
+			if(tmp.getLeft() == n){
+				if(n.getLeft()) tmp.setLeft(n.getLeft());
+				if(n.getRight()) tmp.setRight(n.getRight());
+			}
+			if(tmp.getRight() == n){
+				if(n.get	
 			
+				
 			
 	
 		

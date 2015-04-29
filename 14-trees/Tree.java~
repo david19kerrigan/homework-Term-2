@@ -40,6 +40,8 @@ public class Tree{
 		if(t==null) return;
 		if(!t.getLeft && !t.getRight) return;
 		else{
+			t+=t.getRight;
+			t+=t.getLeft;
 			
 			
 	
