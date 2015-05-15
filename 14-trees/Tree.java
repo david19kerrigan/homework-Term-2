@@ -5,6 +5,22 @@ public class Tree{
 		root = r;
 		
 	}
+	public void add(Node r){
+		Node tmp = root;
+		while((r.getData()>tmp.getData() && tmp.getRight()!=null) || (r.getData()<tmp.getData() && tmp.getLeft()!=null)){ 
+			if(r.getData()>tmp.getData()){
+				tmp = tmp.getRight();
+			}
+			if(r.getData()<tmp.getData()){
+				tmp = tmp.getLeft();
+			}
+		}
+		if(r.getData()>tmp.getData()) tmp.setRight(r);
+		if(r.getData()<tmp.getData()) tmp.setLeft(r);
+	}
+		
+			
+		
 /*
 	public void insert(Node n){
 		Node tmp = root;
@@ -42,7 +58,7 @@ public class Tree{
 		else{
 			t+=t.getRight;
 			t+=t.getLeft;
-*/
+
 
 	public void remove(int d){
 		Node tmp = root;
@@ -63,6 +79,9 @@ public class Tree{
 			}
 			if(tmp.getRight() == n){
 				if(n.get	
+
+*/
+}
 			
 				
 			
